@@ -1,7 +1,6 @@
 const express = require('express');
-const connectDb = require('./config/Db');
 const app = express();
-
+const connectDb = require('./config/Db');
 //connect the database 
 connectDb();
 app.get('/', (req, res) => res.json({
